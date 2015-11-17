@@ -10,6 +10,10 @@ require 'rspec/core/rake_task'
 
 task default: :spec
 
+task :console do
+  exec "pry -r bgg_api -I ./lib"
+end
+
 Jeweler::Tasks.new do |gem|
   gem.name = 'bgg'
   gem.homepage = 'http://github.com/jemiahlee/bgg'

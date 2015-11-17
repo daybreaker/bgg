@@ -18,63 +18,10 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.md"
   ]
-  s.files = [
-    ".document",
-    ".rspec",
-    ".travis.yml",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE.txt",
-    "README.md",
-    "Rakefile",
-    "VERSION",
-    "bgg.gemspec",
-    "lib/bgg.rb",
-    "lib/bgg/collection.rb",
-    "lib/bgg/collection_item.rb",
-    "lib/bgg/game.rb",
-    "lib/bgg/play.rb",
-    "lib/bgg/plays.rb",
-    "lib/bgg/plays_iterator.rb",
-    "lib/bgg/search.rb",
-    "lib/bgg/search_result.rb",
-    "lib/bgg/user.rb",
-    "sample_data/collection?username=texasjdl",
-    "sample_data/collection?username=texasjdl&own=1&excludesubtype=boardgameexpansion",
-    "sample_data/collection?username=yyyyyyy",
-    "sample_data/hot?type=boardgame",
-    "sample_data/plays?pages=9999999999999&username=ryanmacg",
-    "sample_data/plays?username=beetss&page=1",
-    "sample_data/plays?username=ryanmacg",
-    "sample_data/plays?username=texasjdl&id=84876",
-    "sample_data/plays?username=texasjdl&id=84876&type=thing",
-    "sample_data/plays?username=texasjdl&page=1",
-    "sample_data/plays?username=texasjdl&page=2",
-    "sample_data/plays?username=texasjdl&page=3",
-    "sample_data/plays?username=yyyyyyy&page=1",
-    "sample_data/search?query=Burgun",
-    "sample_data/search?query=Burgun&exact=1",
-    "sample_data/search?query=Burgund&type=boardgame",
-    "sample_data/search?query=The+Castles+of+Burgundy&exact=1",
-    "sample_data/search?query=yyyyyyy",
-    "sample_data/thing?id=10000000&type=boardgame",
-    "sample_data/thing?id=29773&type=boardgame",
-    "sample_data/thing?id=70512&type=boardgame",
-    "sample_data/thing?id=84876&type=boardgame",
-    "sample_data/user?name=texasjdl",
-    "sample_data/user?name=yyyyyyy",
-    "spec/bgg_api_spec.rb",
-    "spec/bgg_collection_item_spec.rb",
-    "spec/bgg_collection_spec.rb",
-    "spec/bgg_game_spec.rb",
-    "spec/bgg_play_spec.rb",
-    "spec/bgg_plays_iterator_spec.rb",
-    "spec/bgg_plays_spec.rb",
-    "spec/bgg_search_result_spec.rb",
-    "spec/bgg_search_spec.rb",
-    "spec/bgg_user_spec.rb",
-    "spec/spec_helper.rb"
-  ]
+
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  
   s.homepage = "http://github.com/jemiahlee/bgg"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"

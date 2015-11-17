@@ -11,6 +11,7 @@ group :development do
   gem 'rdoc', '~>3.12'
   gem 'simplecov', '~>0.7.1'
   gem 'webmock', '~>1.8.9'
+  gem 'pry'
 end
 
 group :test, :development do
@@ -18,4 +19,3 @@ group :test, :development do
   gem 'rake', '~>10.1.0'
   gem 'rspec', '~>2.11.0'
 end
-

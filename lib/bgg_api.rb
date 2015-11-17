@@ -73,4 +73,3 @@ require 'bgg/result/search_item'
 require 'bgg/result/user'
 
 require 'bgg/game'
-
